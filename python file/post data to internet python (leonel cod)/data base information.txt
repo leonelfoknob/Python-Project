@@ -1,0 +1,10 @@
+db_name : weater ---> id17256696_weater
+db_user : id17256696_leonel
+db_password : zjU~mSx5L/xrh*ag
+
+table1 : weater_data
+
+
+db_name = fpnsmart_weater
+db_kullanıcı : fpnsmart_leo321
+şifre : Jv818q9g

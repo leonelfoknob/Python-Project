@@ -1,0 +1,3 @@
+import os.path
+
+if not os.path.myfile('python_leo.txt'):

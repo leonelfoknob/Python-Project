@@ -1,0 +1,9 @@
+path_image1 = "image_redim/kadir1.jpg" # chemin de l'image
+photo1 = cv2.imread(path_image1,cv2.IMREAD_COLOR)
+
+cv2.imshow('Video', cv2.resize(photo6,(640,480),interpolation = cv2.INTER_CUBIC)) #sd
+#cv2.imshow('Video', cv2.resize(photo6,(1280,720),interpolation = cv2.INTER_CUBIC)) hd720
+#cv2.imshow('Video', cv2.resize(photo6,(1920,1080),interpolation = cv2.INTER_CUBIC)) hd1080
+#cv2.imshow('Video', cv2.resize(photo6,(3840,2160),interpolation = cv2.INTER_CUBIC)) ultra hd
+cv2.waitKey(0)
+cv2.destroyAllWindows()

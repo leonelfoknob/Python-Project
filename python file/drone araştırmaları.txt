@@ -1,0 +1,36 @@
+1- https://electronoobs.com/eng_robotica_tut5_1.php : esc calibration
+2- https://github.com/nickrehm/dRehmFlight/blob/master/Versions/dRehmFlight_Teensy_BETA_1.3/dRehmFlight_Teensy_BETA_1.3.ino
+3-https://github.com/topics/pid?l=c%2B%2B
+
+armed kk2 with arduino:
+
+#include <Servo.h>
+
+Servo Throttle;
+Servo Rudder;
+Servo Aileron;
+Servo Elevator;
+Servo Auxiliary;
+
+void setup()
+{
+  Throttle.attach(5);
+  Rudder.attach(10);
+  Aileron.attach(6);
+  Elevator.attach(9);
+  Auxiliary.attach(11);
+
+  //set initial positions
+  Throttle.writeMicroseconds(1000);  //down (this may need to be 2000)
+  Rudder.writeMicroseconds(1500);    //centre
+  Aileron.writeMicroseconds(1500);   //centre
+  Elevator.writeMicroseconds(1500);  //centre
+  Auxilliary.writeMicroseconds(1000);//off
+  delay(5000);  //wait 5 seconds for the system to stabalise
+
+  Rudder.writeMicroseconds(2000);    //right.  Throttle is already at a minimum
+}
+
+void loop()
+{
+}
